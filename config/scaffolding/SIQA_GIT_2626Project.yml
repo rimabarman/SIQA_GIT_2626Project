@@ -7,6 +7,72 @@ packages:
   gitUrl: https://github.com/rimabarman
   gitUsername: rimabarman
   gitBranch: main
+- name: WmJDBCAdapter
+  wpmServer: https://packages.webmethods.io
+  wpmRegistry: licensed
+services:
+- serviceName: project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1_RimaB
+  packages:
+  - name: SIQA_GIT_2626Project
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+- serviceName: project.siqa_git_2626.integrations:SIQAAdapterFlow
+  packages:
+  - name: SIQA_GIT_2626Project
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
 configurationVariables:
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionSettings.trustStore
+  : ""
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionManagerSettings.poolable
+  : "false"
   jdbcfunc.SAPTxStore.failFastMode: false
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionManagerSettings.expireTimeout
+  : "1000"
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionSettings.driverType
+  : TstDrv
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionManagerSettings.poolIncrementSize
+  : "1"
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionManagerSettings.maximumPoolSize
+  : "10"
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionSettings.transactionType
+  : NO_TRANSACTION
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionSettings.user
+  : siqatest
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionSettings.dbType
+  : MySQL
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionSettings.serverName
+  : 9.46.196.248
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionSettings.keyStore
+  : ""
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionSettings.databaseName
+  : MYSQL_DATABASE
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionManagerSettings.startupBackoffSecs
+  : "10"
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionSettings.portNumber
+  : "3306"
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionEnabled
+  : "false"
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionSettings.otherProperties
+  : loginTimeout=60;driverType=thin;
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionManagerSettings.heartBeatInterval
+  : "0"
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.SIQA_GIT_2626Project.project.siqa_git_2626.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_RimaB.connectionSettings.password
+  : "{AES}D6/2AGfsSWDOcWCLrORnEQ=="
